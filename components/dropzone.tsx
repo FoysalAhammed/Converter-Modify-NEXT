@@ -230,7 +230,7 @@ export default function Dropzone() {
   // returns
   if (actions.length) {
     return (
-      <div className="space-y-6">
+      <div className="space-y-6 overflow-hidden">
         {actions.map((action: Action, i: any) => (
           <div
             key={i}
@@ -243,7 +243,7 @@ export default function Dropzone() {
               <span className="text-2xl text-orange-600">
                 {fileToIcon(action.file_type)}
               </span>
-              <div className="flex items-center gap-1 w-96">
+              <div className=" grid md:flex lg:flex xl:flex 2xl:flex sm:flex items-center gap-1 w-96">
                 <span className="text-md font-medium overflow-x-hidden">
                   {compressFileName(action.file_name)}
                 </span>
